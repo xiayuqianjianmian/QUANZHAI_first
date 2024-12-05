@@ -1,0 +1,419 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img {
+    position: relative;
+    display: flex;
+    width: 1925px;
+    height: 814px;
+    background: url('321.png') no-repeat center top/cover;
+}
+.container {/*为什么img4不在此类之下还可以和img3对接啊*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('img.png') no-repeat center top/cover;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.tupian{
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    height:auto;
+    top:2.5%;
+    left:35%;
+    transform: translate(-50%, -50%);
+}
+.tupian1{
+    position: absolute;
+    z-index: 2;
+    width: 250px;
+    height: auto;
+    top:5%;
+    left:45%;
+    transform: translate(-50%, -50%);
+}
+.wenzi{
+    position:absolute;
+    margin: 0 5px;
+    display: inline-block;
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    z-index: 5;
+}
+.wenzi.one{
+    top: 5%;
+    left:15%;
+}
+.wenzi.two {
+    top: 5%;
+    left:25%;
+}
+.wenzi.three {
+    top: 5%;
+    left: 55%;
+}
+.wenzi.four {
+    top: 5%;
+    left: 75%;
+}
+.pen1{
+    z-index: 5;
+    color: white;
+    position: absolute;
+    font-size:100px;
+    left:50%;
+    top:30%;
+    transform: translate(-50%, -50%);
+}
+.pen2{
+    z-index: 5;
+    color: white;
+    position: absolute;
+    font-size: 100px;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+.img2 {
+    position: relative;
+    display: flex;
+    width: 1925px;
+    height: 600px;
+    background-color: rgba(128, 128, 128, 0.5);
+    z-index: 1;
+    
+}
+.tuceng5{
+    position: absolute;
+    z-index: 2;
+    width: 450px;
+    height: auto;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.图层6{
+    position: absolute;
+    z-index: 2;
+    width: 900px;
+    height: 580px;
+    top: 71%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+}
+.播放{
+    position: absolute;
+    z-index: 2;
+    width: 400px;
+    height: auto;
+    top: 85%;
+    left:34%;
+    z-index: 2;
+}
+.Weclome{
+    position: absolute;
+    font-weight: bold;
+    font-size: 70px;
+    top:20%;
+    left:55%;
+    z-index:3;
+}
+.介绍{
+    position: absolute;
+    font-size: 25px;
+    top: 50%;
+    left: 55%;
+    z-index: 3;
+}
+.img3{
+    position: relative;
+    display: flex;
+    width: 1925px;
+    height: 600px;
+    background-color:white;
+    z-index: 1;
+    top: 180px;
+}
+.xilie{
+    position:absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+}
+.columns {
+    display: flex;
+    justify-content: space-around;
+ 
+    position:absolute;
+    top: 40%;
+
+}
+
+.column {
+    width: 30%;
+    padding: 10px;
+}
+
+.column:last-child {
+    border-right: none;
+}
+
+.column-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.column-content {
+    font-size: 20px;
+}
+.container2{
+
+        flex-direction: column;
+        align-items: center;
+}
+.img4{
+    position: relative;
+    display: flex;
+    width: 1925px;
+    height: 600px;
+    background-color: white;
+    z-index: 1;
+    top: 550px;
+}
+.tuceng8{
+    position:absolute;
+    top: 30%;
+    left:0;
+    z-index: 2;
+    width: 1925px;
+    height: auto;
+}
+.箭头{
+    position: absolute;
+    top:11%;
+    left: 48.5%;
+    z-index: 4;
+}
+.liaojiexiangqing{
+    text-align: center;  
+    justify-items: center;
+    background-color: black;
+    position: absolute;   
+    font-size: 28px;
+    top: 10%;
+    left: 40%;
+    z-index: 4;
+    color: white;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+}
+.图层9{
+    position:absolute;
+    width: 89px;
+    height: auto;
+    top: 65%;
+    left: 10%;
+    z-index: 3;
+}
+.redwenzi{
+    position: absolute;
+    font-size: 25px;
+    top: 61.5%;
+    left: 10.5%;
+    z-index: 4;
+}
+.img5{
+    background-color: white;
+    width: 1925px;
+    height: 400px;
+    position: relative;  
+    top: 550px;
+    z-index: 1;
+}
+.图层11{
+    position:absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.touxiang{
+    position:absolute;
+    top: 46%;
+    left: 48.5%;
+}
+.gangbijieshao{
+    position: absolute;
+    font-size: 20px;
+    top: 62%;
+    left: 32%;
+}
+.yishuzi1{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}
+.yishuzi2{
+    position: absolute;
+    top: 18.5%;
+    left: 40%;
+}
+.img6{
+    position: relative;
+    background-color: white;
+    width: 1925px;
+    height: 800px;
+    top: 600px;
+}
+.choose{
+    position: absolute;
+    top: 5%;
+    left: 47.5%;
+}
+.ourproducts{
+    position: absolute;
+    top: 10%;
+    left:45% ;
+}
+.六组图片{
+    position: absolute;
+    top: 18%;
+    left: 25%;
+}
+.sugou{
+    background-color: brown;
+    position: absolute;
+    width: 221px;
+    height: 68px;
+    top: 90%;
+    left: 42.5%;
+    z-index: 2;
+    opacity: 0;
+}
+.sugouwenzi{
+    position: absolute;
+    top: 90%;
+    left: 42.5%;
+    z-index: 1;
+}
+.img7{
+    position: relative;
+    width: 1925px;
+    height: 2000px;
+    background-color: white;
+    top: 600px;
+}
+.tuceng16{
+    position: absolute;   
+}
+.图层17{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+.钢笔1{
+    position: absolute;
+    left: 31%;
+    top: 10.75%;
+}
+.钢笔2{
+    position: absolute;
+    left: 31%;
+    top: 18%;
+}
+.钢笔3{
+    position: absolute;
+    left:31%;
+    top: 25.25%;
+}
+.gangbi{
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 52%;
+}
+.first{
+    top:10.75%;
+}
+.second{
+    top:18%;
+}
+.third{
+    top:25.25%;
+}
+.tuijian{
+    background-color: blue;
+    position: absolute;
+    top: 41%;
+    left:45%;
+    width: 202px;
+    height: 60px;
+    z-index: 3;
+    opacity: 0;
+}
+.推荐{
+    position: absolute;
+    top: 41%;
+    left: 45%;
+}
+.最后{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.daoer{
+    position: absolute;
+    top: 51.1%;
+    left: 0;
+}
+.daoer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('图层 15.png') no-repeat center top/cover;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 3;
+}
+.linmei{
+    position: absolute;
+    top: 100.5%;
+    left: 42%;
+}
+.CUTE{
+    position: absolute;
+    top:65% ;
+    left: 40%;
+    z-index: 4;
+}
+.LAMY{
+    position: absolute;
+    top: 65%;
+    z-index: 4;
+    left: 45%;
+}
+.GOOD{
+    position: absolute;
+    top: 65%;
+    left: 63%;
+    z-index: 4;
+}
