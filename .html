@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        width: 650px;
+        margin: 10px auto;
+        border: 1px solid skyblue;
+        background-color: lightgrey;
+      }
+      input[type="button"]:hover {
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <label
+        >请输入一个字符串：<input type="text" id="string1" placeholder="字符串"
+      /></label>
+      <br />
+      <label
+        >请输入一个字符串：<input type="text" id="string2" placeholder="子串"
+      /></label>
+      <input type="button" onclick="Comment()" value="提交" />
+      <br />
+      <div>子串出现的次数为：<span id="count">0</span></div>
+    </div>
+    <script>
+      function Comment() {
+        var firstString = document.getElementById("string1").value;
+        var secondString = document.getElementById("string2").value;
+        var count = 0;
+        for (var i = 0; i < firstString.length; i++) {
+          if (firstString.substr(i, secondString.length) === secondString) {
+            count++;
+          }
+        }
+        document.getElementById("count").textContent = count;
+      }
+    </script>
+  </body>
+</html>
